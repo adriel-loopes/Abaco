@@ -3,29 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ábaco com Hastes</title>
+  <title>Ábaco Interativo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Ábaco Interativo</h1>
+  
   <div id="abaco">
-    <!-- Criando 10 hastes -->
-    <div class="haste">
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-    </div>
-    <div class="haste">
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-      <div class="conta" draggable="true"></div>
-    </div>
-    <!-- Repita o bloco acima para mais hastes -->
+    <!-- Hastes do ábaco -->
+    <div class="haste" data-valor="1"></div>
+    <div class="haste" data-valor="10"></div>
+    <div class="haste" data-valor="100"></div>
+    <div class="haste" data-valor="1000"></div>
   </div>
+  
+  <div id="resultado">
+    <h2>Valor Total: <span id="valor-total">0</span></h2>
+  </div>
+  
+  <div id="modo-treino">
+    <h3>Modo Treino</h3>
+    <p>Desafio: Alcance o número <span id="desafio-numero"></span></p>
+    <p>Status: <span id="status-desafio">Ainda não completado</span></p>
+    <button id="novo-desafio">Novo Desafio</button>
+  </div>
+
+  <audio id="som-movimento" src="som.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>

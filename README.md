@@ -1,7 +1,5 @@
 # Ábaco Interativo
 
-![screenshot](./c2ac884d-91b7-463e-b717-680c7ecd116f.png)
-
 Um projeto simples e didático de um ábaco interativo desenvolvido com HTML, CSS e JavaScript. Ideal para fins educacionais e para quem está aprendendo sobre lógica de programação e manipulação do DOM.
 
 ---
